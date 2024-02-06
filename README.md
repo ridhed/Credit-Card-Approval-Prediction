@@ -8,33 +8,26 @@ This project aims to predict credit card approval using a dataset that includes 
 
 ## Table of Contents
 
-1. [Questions to Answer](#questions-to-answer)
+1. [Information](#information)
 2. [Initial Hypotheses](#initial-hypotheses)
 3. [Data Analysis Approach](#data-analysis-approach)
 4. [EDA Findings](#eda-findings)
 5. [Machine Learning Approach](#machine-learning-approach)
 6. [Model Comparison](#model-comparison)
 
----
+## Information
 
-## Questions to Answer
+## Importance of the Proposal
+- **Digital Financial Transactions:** In today's world, the rise in digital financial transactions has increased data complexity, necessitating efficient credit assessment.
+- **Risk Mitigation:** Effective credit evaluation predicts whether a client is trustworthy, minimizing credit card fraud risks and ensuring a secure financial position for the institution.
 
-### Why is your proposal important in today’s world?
+## Impact on the Banking Sector
+- **Customer Acquisition:** Focus on welcoming new credit card customers by leveraging data science tools such as Credit Scoring.
+- **Risk Management:** Effective customer evaluation minimizes non-repayment risks, enhancing transaction security by detecting fraudulent activities.
+- **Customer Satisfaction:** Understanding customer needs through data analysis allows the bank to tailor services, fostering satisfaction and loyalty.
 
-The proposal gains significance in the era of digital financial transactions, where efficient credit assessment is crucial. Effective credit evaluation minimizes the risk of fraud and ensures a secure financial position for the institution.
-
-### How is it going to impact the banking sector?
-
-- Facilitates welcoming new credit card customers.
-- Effectively evaluates customers while minimizing non-repayment risks.
-- Enhances transaction security by detecting fraudulent activities.
-- Tailors services to better suit customer needs, fostering satisfaction and loyalty.
-
-### Future Relevance for Banks in India
-
-Addresses the gap in knowledge related to creditworthiness factors like Credit Score or CIBIL, Payment History, Number of Open Credit Accounts, Public Records, and Age.
-
----
+## Future Relevance for Banks in India
+- **Addressing Knowledge Gaps:** Future banking systems may benefit from insights into factors like Credit Score or CIBIL, Payment History, Number of Open Credit Accounts, Public Records, and Age.
 
 ## Initial Hypotheses
 
