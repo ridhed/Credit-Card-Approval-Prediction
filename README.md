@@ -68,7 +68,7 @@ A machine learning project to predict credit card approvals using applicant data
 
 **C. SQL & Business Insights (Notebook 3)**
 Key queries:
-- Average income by type (Commercial associates earn highest: ₹197k).
+- Average income by type (Commercial associates earn the highest: ₹197k).
 - 70 married applicants had bad credit; males outnumbered females (37 vs. 33).
 - Top 5 earners (₹360k/year) were mostly state servants.
 
