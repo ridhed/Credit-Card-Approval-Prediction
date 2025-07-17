@@ -1,5 +1,3 @@
-Here’s a refined version of your README.md with improved structure, clarity, and visual appeal. Key changes include **concise phrasing**, **better organization**, **actionable insights**, and **enhanced readability**:
-
 ---
 
 # Credit Card Approval Prediction  
@@ -54,35 +52,30 @@ A machine learning project to predict credit card approvals using applicant data
 ---
 
 ## ⚙️ Technical Approach  
-### Pipeline  
-1. **Preprocessing**:  
-   - Handled outliers (IQR for income/age).  
-   - Engineered features (e.g., `Employed_Years` from days).  
+**A. Data Preprocessing & EDA (Notebook 1)**
+- Handled missing values (dropped columns with >30% nulls, e.g., Type_Occupation).
+- Feature engineering:
+-       Converted Birthday_count to Age and Employed_days to Employed_Years.
+-       Binned age into categories (Young/Adult/Senior) for better analysis.
+-       Outlier treatment: Used IQR method for Annual_income, Age, etc.
+-   Hypothesis testing: Validated business assumptions (e.g., "Marital status impacts approval").
 
-2. **Modeling**:  
-   - Tested 6 models; **Random Forest** performed best:  
-     - **Accuracy**: 91%  
-     - **AUC**: 0.74  
-   - Hyperparameter tuning with `GridSearchCV`.  
+**B. Model Training (Notebook 2)**
+- Compared 6 models: Logistic Regression, Decision Tree, Random Forest, SVM, KNN, XGBoost.
+- Best model: Random Forest (91% test accuracy, AUC 0.74).
+- Hyperparameter tuning: Used GridSearchCV to optimize parameters (e.g., max_depth=10 for RF).
+- Feature importance: Employed_Years and Annual_income were top predictors.
 
-3. **SQL Analysis**:  
-   ```sql
-   -- Top income earners
-   SELECT * FROM Credit_data 
-   ORDER BY Annual_Income DESC LIMIT 5;
-   ```
+**C. SQL & Business Insights (Notebook 3)**
+Key queries:
+- Average income by type (Commercial associates earn highest: ₹197k).
+- 70 married applicants had bad credit; males outnumbered females (37 vs. 33).
+- Top 5 earners (₹360k/year) were mostly state servants.
 
 ---
 
 ## 📊 Results  
 ### Model Comparison  
-| Model | Accuracy | AUC |  
-|-------|----------|-----|  
-| Random Forest | 91% | 0.74 |  
-| XGBoost | 88% | 0.74 |  
-| Logistic Regression | 87% | 0.61 |  
-
-**Feature Importance**:  
 ![Testing Accuracy and AUC results](https://github.com/ridhed/Credit-Card-Approval-Prediction/assets/83410546/fa202228-ac0a-47f7-a1e6-2744fa9b9b72)
 
 ---
