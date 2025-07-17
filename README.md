@@ -76,7 +76,6 @@ Key queries:
 ## 📊 Results  
 ### Model Comparison  
 ![Testing Accuracy and AUC results](https://github.com/ridhed/Credit-Card-Approval-Prediction/assets/83410546/fa202228-ac0a-47f7-a1e6-2744fa9b9b72)
-<img width="1209" height="335" alt="Screenshot 2025-07-17 155706" src="https://github.com/user-attachments/assets/730f0d18-47a6-4438-a9c0-151278cf55ad" />
 
 ---
 
