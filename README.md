@@ -41,7 +41,7 @@ A machine learning project to predict credit card approvals using applicant data
 #### Demographics & Features  
 - **Gender**: Balanced binary distribution (`F=0`, `M=1`).  
 - **Education**: Mostly "Secondary Education" (727) vs. "Higher Education" (305).  
-  ![Education Distribution](Screenshot_2025-07-17_154913.png)  
+  ![Education Distribution]<img width="817" height="270" alt="Screenshot 2025-07-17 154913" src="https://github.com/user-attachments/assets/2bc97560-2c17-4f59-a745-cd4aeb234463" />
 - **Marital Status**: 67.6% Married, 14.6% Single.  
   ![Marital Status](Screenshot_2025-07-17_154901.png)  
 - **Income**: Right-skewed; most incomes ≤ ₹300K.  
