@@ -14,7 +14,7 @@ A machine learning project to predict credit card approvals using applicant data
 
 ## 🗂 Table of Contents  
 - [Business Impact](#-business-impact)  
-- [Data Insights](#-data-insights)  
+- [Key Insights & Visualizations ](#-key-insights-&-visualizations )  
 - [Technical Approach](#-technical-approach)  
 - [Results](#-results)  
 - [How to Use](#-how-to-use)  
@@ -33,20 +33,65 @@ A machine learning project to predict credit card approvals using applicant data
 | Fraud Prevention | Flagged 12% applicants with inconsistent income/employment |  
 | Customer Retention | Tailored offers for high-approval segments (e.g., commercial associates) |  
 
+--- 
+
+## 📊 Key Insights & Visualizations  
+
+### 1. **Data Distribution**  
+#### Demographics & Features  
+- **Gender**: Balanced binary distribution (`F=0`, `M=1`).  
+- **Education**: Mostly "Secondary Education" (727) vs. "Higher Education" (305).  
+  ![Education Distribution](Screenshot_2025-07-17_154913.png)  
+- **Marital Status**: 67.6% Married, 14.6% Single.  
+  ![Marital Status](Screenshot_2025-07-17_154901.png)  
+- **Income**: Right-skewed; most incomes ≤ ₹300K.  
+  ![Income Distribution](Screenshot_2025-07-17_155007.png)  
+
+#### Target Variable (`Label`)  
+- **Approval Rate**: 87% approved vs. 13% rejected.  
+  ![Approval Distribution](Screenshot_2025-07-17_154852.png)  
+
 ---
 
-## 🔍 Data Insights  
-### Key Hypotheses Validated  
-✅ **Approval Drivers**:  
-- Higher income (+₹200k) and longer employment (10+ yrs) → 90% approval rate.  
-- Married applicants had 15% higher rejection rates (*p=0.03*).  
+### 2. **Feature Importance & Model Performance**  
+#### Top Predictors of Approval (Random Forest)  
+1. **Employed_Years** (29%)  
+2. **Age** (20%)  
+3. **Annual_income** (19%)  
+  ![Feature Importance](Screenshot_2025-07-17_155720.png)  
 
-❌ **Non-Factors**:  
-- Gender, car ownership (*p>0.05*).  
+---
 
-### EDA Highlights  
-![Approval by Marital Status](https://via.placeholder.com/400x200?text=Marital+Status+Analysis)  
-*Married males had 37 rejections vs. 33 for females (SQL analysis).*  
+### 3. **Business Insights**  
+#### Approval Trends by Demographics  
+- **Age**: Seniors (60-69) have higher incomes but similar approval rates.  
+  ![Income by Age](Screenshot_2025-07-17_155118.png)  
+  ![Approval by Age](Screenshot_2025-07-17_155108.png)  
+- **Marital Status**: Married applicants dominate (50% of data).  
+  ![Approval by Marital Status](Screenshot_2025-07-17_155034.png)  
+- **Property Ownership**: No significant impact on approval (`p=0.51`).  
+
+#### SQL Findings  
+- Highest earners: Commercial associates (₹197K avg).  
+- Married males had 12% more rejections than females.  
+
+---
+
+### 4. **Data Preprocessing**  
+#### Encoding & Feature Types  
+- **Binary**: `Car_Owner` (`Y=1`, `N=0`), `Label` (`Approved=0`).  
+- **Ordinal**: `Education` (Higher=1, Lower=2), `Age_Category` (Young=2).  
+  *(Full mapping in Notebook 1)*  
+
+#### Outliers Handled  
+- Removed extreme values in `Annual_income`, `Age`, and `Employed_Years` using IQR.  
+
+---
+
+### 5. **How to Navigate This Project**  
+1. **Notebook 1**: EDA, cleaning, feature engineering.  
+2. **Notebook 2**: Model training/evaluation (91% accuracy).  
+3. **Notebook 3**: SQL queries for business insights.  
 
 ---
 
