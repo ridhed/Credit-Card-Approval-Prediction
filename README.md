@@ -1,4 +1,3 @@
----
 
 # Credit Card Approval Prediction  
 
