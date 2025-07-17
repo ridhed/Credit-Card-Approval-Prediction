@@ -28,7 +28,28 @@ This project aims to predict credit card approval using a dataset that includes 
 
 ## Future Relevance for Banks in India
 - **Addressing Knowledge Gaps:** Future banking systems may benefit from insights into factors like Credit Score or CIBIL, Payment History, Number of Open Credit Accounts, Public Records, and Age.
+  
+## Key Technical Takeaways 
+**A. Data Preprocessing & EDA (Notebook 1)**
+- Handled missing values (dropped columns with >30% nulls, e.g., Type_Occupation).
+- **Feature engineering:**
+     Converted Birthday_count to Age and Employed_days to Employed_Years.
+     Binned age into categories (Young/Adult/Senior) for better analysis.
+     Outlier treatment: Used IQR method for Annual_income, Age, etc.
+- **Hypothesis testing:** Validated business assumptions (e.g., "Marital status impacts approval").
 
+**B. Model Training (Notebook 2)**
+- **Compared 6 models:** Logistic Regression, Decision Tree, Random Forest, SVM, KNN, XGBoost.
+- **Best model:** Random Forest (91% test accuracy, AUC 0.74).
+- **Hyperparameter tuning:** Used GridSearchCV to optimize parameters (e.g., max_depth=10 for RF).
+- **Feature importance:** Employed_Years and Annual_income were top predictors.
+
+**C. SQL & Business Insights (Notebook 3)**
+- **Key queries:**
+- Average income by type (Commercial associates earn highest: ₹197k).
+- 70 married applicants had bad credit; males outnumbered females (37 vs. 33).
+- Top 5 earners (₹360k/year) were mostly state servants.
+  
 ## Initial Hypotheses
 
 ### Categorical Feature Analysis
