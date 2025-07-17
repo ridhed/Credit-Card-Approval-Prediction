@@ -41,7 +41,7 @@ A machine learning project to predict credit card approvals using applicant data
 #### Demographics & Features  
 - **Gender**: Balanced binary distribution (`F=0`, `M=1`).  
 - **Education**: Mostly "Secondary Education" (727) vs. "Higher Education" (305).  
-- <img width="817" height="270" alt="Screenshot 2025-07-17 154913" src="https://github.com/user-attachments/assets/2bc97560-2c17-4f59-a745-cd4aeb234463" />
+<img width="817" height="270" alt="Screenshot 2025-07-17 154913" src="https://github.com/user-attachments/assets/2bc97560-2c17-4f59-a745-cd4aeb234463" />
 **Marital Status**: 67.6% Married, 14.6% Single.  
 <img width="835" height="294" alt="Screenshot 2025-07-17 154901" src="https://github.com/user-attachments/assets/e7ad0525-133d-41c8-98e5-6bff6dca8df8" />
 - **Income**: Right-skewed; most incomes ≤ ₹300K.  
@@ -58,17 +58,21 @@ A machine learning project to predict credit card approvals using applicant data
 1. **Employed_Years** (29%)  
 2. **Age** (20%)  
 3. **Annual_income** (19%)  
-- [Feature Importance]<img width="883" height="563" alt="Screenshot 2025-07-17 155720" src="https://github.com/user-attachments/assets/198e068f-c220-4d14-a111-d338dde63150" />
+## Feature Importance
+<img width="883" height="563" alt="Screenshot 2025-07-17 155720" src="https://github.com/user-attachments/assets/198e068f-c220-4d14-a111-d338dde63150" />
   
 ---
 
 ### 3. **Business Insights**  
 #### Approval Trends by Demographics  
 - **Age**: Seniors (60-69) have higher incomes but similar approval rates.  
-  ![Income by Age]<img width="745" height="489" alt="Screenshot 2025-07-17 155118" src="https://github.com/user-attachments/assets/8a99a31b-3d01-4c48-8701-b80df6dd2e18" />  
-  ![Approval by Age]<img width="821" height="238" alt="Screenshot 2025-07-17 155108" src="https://github.com/user-attachments/assets/2c5c6aff-3b0f-424e-9c0a-b848f6b872a3" />
-- **Marital Status**: Married applicants dominate (50% of data).  
-  ![Approval by Marital Status]<img width="822" height="266" alt="Screenshot 2025-07-17 155034" src="https://github.com/user-attachments/assets/6e488657-67d8-409b-bc5c-68dd1796a8a4" />
+  1. Approval Income by Age
+  <img width="745" height="489" alt="Screenshot 2025-07-17 155118" src="https://github.com/user-attachments/assets/8a99a31b-3d01-4c48-8701-b80df6dd2e18" />  
+  2. Approval by Age
+  <img width="821" height="238" alt="Screenshot 2025-07-17 155108" src="https://github.com/user-attachments/assets/2c5c6aff-3b0f-424e-9c0a-b848f6b872a3" />
+  3. Approval by Marital Status]
+  <img width="822" height="266" alt="Screenshot 2025-07-17 155034" src="https://github.com/user-attachments/assets/6e488657-67d8-409b-bc5c-68dd1796a8a4" />
+  **Marital Status**: Married applicants dominate (50% of data).  
 - **Property Ownership**: No significant impact on approval (`p=0.51`).  
 
 #### SQL Findings  
