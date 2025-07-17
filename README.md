@@ -41,15 +41,15 @@ A machine learning project to predict credit card approvals using applicant data
 #### Demographics & Features  
 - **Gender**: Balanced binary distribution (`F=0`, `M=1`).  
 - **Education**: Mostly "Secondary Education" (727) vs. "Higher Education" (305).  
-  ![Education Distribution]<img width="817" height="270" alt="Screenshot 2025-07-17 154913" src="https://github.com/user-attachments/assets/2bc97560-2c17-4f59-a745-cd4aeb234463" />
-- **Marital Status**: 67.6% Married, 14.6% Single.  
-  ![Marital Status]<img width="835" height="294" alt="Screenshot 2025-07-17 154901" src="https://github.com/user-attachments/assets/e7ad0525-133d-41c8-98e5-6bff6dca8df8" />
+- <img width="817" height="270" alt="Screenshot 2025-07-17 154913" src="https://github.com/user-attachments/assets/2bc97560-2c17-4f59-a745-cd4aeb234463" />
+**Marital Status**: 67.6% Married, 14.6% Single.  
+- <img width="835" height="294" alt="Screenshot 2025-07-17 154901" src="https://github.com/user-attachments/assets/e7ad0525-133d-41c8-98e5-6bff6dca8df8" />
 - **Income**: Right-skewed; most incomes ≤ ₹300K.  
-  ![Income Distribution]<img width="825" height="255" alt="Screenshot 2025-07-17 155007" src="https://github.com/user-attachments/assets/6008fc42-cf62-4a74-9123-357a38181053" />
+- <img width="825" height="255" alt="Screenshot 2025-07-17 155007" src="https://github.com/user-attachments/assets/6008fc42-cf62-4a74-9123-357a38181053" />
 
 #### Target Variable (`Label`)  
 - **Approval Rate**: 87% approved vs. 13% rejected.  
-  ![Approval Distribution]<img width="871" height="323" alt="Screenshot 2025-07-17 154852" src="https://github.com/user-attachments/assets/15c5eb82-abf4-4bec-9485-0f9d0193371d" />
+- <img width="871" height="323" alt="Screenshot 2025-07-17 154852" src="https://github.com/user-attachments/assets/15c5eb82-abf4-4bec-9485-0f9d0193371d" />
 
 ---
 
@@ -58,7 +58,7 @@ A machine learning project to predict credit card approvals using applicant data
 1. **Employed_Years** (29%)  
 2. **Age** (20%)  
 3. **Annual_income** (19%)  
-  ![Feature Importance]<img width="883" height="563" alt="Screenshot 2025-07-17 155720" src="https://github.com/user-attachments/assets/198e068f-c220-4d14-a111-d338dde63150" />
+- [Feature Importance]<img width="883" height="563" alt="Screenshot 2025-07-17 155720" src="https://github.com/user-attachments/assets/198e068f-c220-4d14-a111-d338dde63150" />
   
 ---
 
